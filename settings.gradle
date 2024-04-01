@@ -1,0 +1,6 @@
+rootProject.name = 'genshin-artifact-manager'
+include 'gam-aggregate'
+include 'gam-spec'
+include 'gam-rest'
+include 'gam-boot'
+
