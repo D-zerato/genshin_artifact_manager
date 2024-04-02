@@ -29,8 +29,8 @@ subprojects {
     group groupName
     version gamVersion
 
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
+    sourceCompatibility = '1.8' // source 단계에서의 사용 jdk 버전
+    targetCompatibility = '1.8' // 해당 프로그램을 돌리기 위한 최소 jdk 버전
     compileJava.options.encoding = 'UTF-8'
 
     repositories {
