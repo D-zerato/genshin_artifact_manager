@@ -5,9 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Prop {
+public class Equip {
     //
-    private int type;
-    private String ival;
-    private String val;
+    private int itemId;
 }

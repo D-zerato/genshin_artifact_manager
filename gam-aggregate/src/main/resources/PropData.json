@@ -1,0 +1,14 @@
+[
+  {
+    "code": 1001,
+    "description": "경험치"
+  },
+  {
+    "code": 1002,
+    "description": "돌파 레벨"
+  },
+  {
+    "code": 4001,
+    "description": "레벨"
+  }
+]

@@ -16,5 +16,11 @@ public class PlayerInfo {
     private String towerLevelIndex;
     private String showAvatarInfoList; // todo 타입 변경 필요
     private String showNameCardIdList;
-//    private String profilePicture.avatarId // 프로필 사진 캐릭터 ID
+    private ProfilePicture profilePicture; // 프로필 사진 캐릭터 ID
+
+    @Getter
+    @Setter
+    public class ProfilePicture {
+        private String id;
+    }
 }

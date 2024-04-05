@@ -1,0 +1,306 @@
+[
+  {
+    "code": 1,
+    "description": "기초 HP"
+  },
+  {
+    "code": 2,
+    "description": "HP"
+  },
+  {
+    "code": 3,
+    "description": "HP%"
+  },
+  {
+    "code": 4,
+    "description": "기초 공격력"
+  },
+  {
+    "code": 5,
+    "description": "공격력"
+  },
+  {
+    "code": 6,
+    "description": "공격력%"
+  },
+  {
+    "code": 7,
+    "description": "기초 방어력"
+  },
+  {
+    "code": 8,
+    "description": "방어력"
+  },
+  {
+    "code": 9,
+    "description": "방어력%"
+  },
+  {
+    "code": 10,
+    "description": "기초 이동 속도"
+  },
+  {
+    "code": 11,
+    "description": "이동 속도%"
+  },
+  {
+    "code": 20,
+    "description": "치명타 확률"
+  },
+  {
+    "code": 22,
+    "description": "치명타 피해"
+  },
+  {
+    "code": 23,
+    "description": "원소 충전 효율"
+  },
+  {
+    "code": 26,
+    "description": "치유 보너스"
+  },
+  {
+    "code": 27,
+    "description": "받는 치유 보너스"
+  },
+  {
+    "code": 28,
+    "description": "원소 마스터리"
+  },
+  {
+    "code": 29,
+    "description": "물리 내성"
+  },
+  {
+    "code": 30,
+    "description": "물리 피해 보너스"
+  },
+  {
+    "code": 40,
+    "description": "불 원소 피해 보너스"
+  },
+  {
+    "code": 41,
+    "description": "번개 원소 피해 보너스"
+  },
+  {
+    "code": 42,
+    "description": "물 원소 피해 보너스"
+  },
+  {
+    "code": 43,
+    "description": "풀 원소 피해 보너스"
+  },
+  {
+    "code": 44,
+    "description": "바람 원소 피해 보너스"
+  },
+  {
+    "code": 45,
+    "description": "바위 원소 피해 보너스"
+  },
+  {
+    "code": 46,
+    "description": "얼음 원소 피해 보너스"
+  },
+  {
+    "code": 50,
+    "description": "불 원소 내성"
+  },
+  {
+    "code": 51,
+    "description": "번개 원소 내성"
+  },
+  {
+    "code": 52,
+    "description": "물 원소 내성"
+  },
+  {
+    "code": 53,
+    "description": "풀 원소 내성"
+  },
+  {
+    "code": 54,
+    "description": "바람 원소 내성"
+  },
+  {
+    "code": 55,
+    "description": "바위 원소 내성"
+  },
+  {
+    "code": 56,
+    "description": "얼음 원소 내성"
+  },
+  {
+    "code": 70,
+    "description": "필요 불 원소 에너지"
+  },
+  {
+    "code": 71,
+    "description": "필요 번개 원소 에너지"
+  },
+  {
+    "code": 72,
+    "description": "필요 물 원소 에너지"
+  },
+  {
+    "code": 73,
+    "description": "필요 풀 원소 에너지"
+  },
+  {
+    "code": 74,
+    "description": "필요 바람 원소 에너지"
+  },
+  {
+    "code": 75,
+    "description": "필요 얼음 원소 에너지"
+  },
+  {
+    "code": 76,
+    "description": "필요 바위 원소 에너지"
+  },
+  {
+    "code": 80,
+    "description": "재사용 대기시간 감소"
+  },
+  {
+    "code": 81,
+    "description": "보호막 강화"
+  },
+  {
+    "code": 1000,
+    "description": "현재 불 원소 에너지"
+  },
+  {
+    "code": 1001,
+    "description": "현재 번개 원소 에너지"
+  },
+  {
+    "code": 1002,
+    "description": "현재 물 원소 에너지"
+  },
+  {
+    "code": 1003,
+    "description": "현재 풀 원소 에너지"
+  },
+  {
+    "code": 1004,
+    "description": "현재 바람 원소 에너지"
+  },
+  {
+    "code": 1005,
+    "description": "현재 얼음 원소 에너지"
+  },
+  {
+    "code": 1006,
+    "description": "현재 바위 원소 에너지"
+  },
+  {
+    "code": 1010,
+    "description": "현재 HP"
+  },
+  {
+    "code": 2000,
+    "description": "최대 HP"
+  },
+  {
+    "code": 2001,
+    "description": "공격력"
+  },
+  {
+    "code": 2002,
+    "description": "방어력"
+  },
+  {
+    "code": 2003,
+    "description": "이동 속도"
+  },
+  {
+    "code": 3025,
+    "description": "원소 반응 치명타 확률"
+  },
+  {
+    "code": 3026,
+    "description": "원소 반응 치명타 피해"
+  },
+  {
+    "code": 3027,
+    "description": "원소 반응 (과부하) 치명타 확률"
+  },
+  {
+    "code": 3028,
+    "description": "원소 반응 (과부하) 치명타 피해"
+  },
+  {
+    "code": 3029,
+    "description": "원소 반응 (확산) 치명타 확률"
+  },
+  {
+    "code": 3030,
+    "description": "원소 반응 (확산) 치명타 피해"
+  },
+  {
+    "code": 3031,
+    "description": "원소 반응 (감전) 치명타 확률"
+  },
+  {
+    "code": 3032,
+    "description": "원소 반응 (감전) 치명타 피해"
+  },
+  {
+    "code": 3033,
+    "description": "원소 반응 (초전도) 치명타 확률"
+  },
+  {
+    "code": 3034,
+    "description": "원소 반응 (초전도) 치명타 피해"
+  },
+  {
+    "code": 3035,
+    "description": "원소 반응 (연소) 치명타 확률"
+  },
+  {
+    "code": 3036,
+    "description": "원소 반응 (연소) 치명타 피해"
+  },
+  {
+    "code": 3037,
+    "description": "원소 반응 (빙결 (쇄빙)) 치명타 확률"
+  },
+  {
+    "code": 3038,
+    "description": "원소 반응 (빙결 (쇄빙)) 치명타 피해"
+  },
+  {
+    "code": 3039,
+    "description": "원소 반응 (개화) 치명타 확률"
+  },
+  {
+    "code": 3040,
+    "description": "원소 반응 (개화) 치명타 피해"
+  },
+  {
+    "code": 3041,
+    "description": "원소 반응 (발화) 치명타 확률"
+  },
+  {
+    "code": 3042,
+    "description": "원소 반응 (발화) 치명타 피해"
+  },
+  {
+    "code": 3043,
+    "description": "원소 반응 (만개) 치명타 확률"
+  },
+  {
+    "code": 3044,
+    "description": "원소 반응 (만개) 치명타 피해"
+  },
+  {
+    "code": 3045,
+    "description": "기초 원소 반응 치명타 확률"
+  },
+  {
+    "code": 3046,
+    "description": "기초 원소 반응 치명타 피해"
+  }
+]
