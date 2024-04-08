@@ -1,7 +1,7 @@
-package dz.game.genshin.gam.player.entity;
+package dz.game.genshin.gam.enka.entity;
 
-import dz.game.genshin.gam.player.vo.Equip;
-import dz.game.genshin.gam.player.vo.Prop;
+import dz.game.genshin.gam.enka.vo.Equip;
+import dz.game.genshin.gam.enka.vo.Prop;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.collections4.CollectionUtils;
@@ -24,7 +24,7 @@ public class AvatarInfo {
     private List<Integer> inherentProudSkillList;   // 해금된 특성 목록
     private Map<String, Integer> skillLevelMap; // 스킬 레벨 맵
     private List<Equip> equipList; // 무기, 성유물 정보
-    private Fetter fetterInfo; // 호감도 레벨    // todo 10레벨아닌 경우 확인 필요
+    private Fetter fetterInfo; // 호감도 레벨
 
     public int getExpLevel() {
         //

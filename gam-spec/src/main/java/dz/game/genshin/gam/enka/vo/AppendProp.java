@@ -1,4 +1,4 @@
-package dz.game.genshin.gam.player.vo;
+package dz.game.genshin.gam.enka.vo;
 
 public enum AppendProp {
     FIGHT_PROP_BASE_ATTACK,             // 기초 공격력 [Weapon]

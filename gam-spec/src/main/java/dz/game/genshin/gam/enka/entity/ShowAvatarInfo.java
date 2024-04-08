@@ -1,4 +1,4 @@
-package dz.game.genshin.gam.player.entity;
+package dz.game.genshin.gam.enka.entity;
 
 import lombok.Getter;
 import lombok.Setter;

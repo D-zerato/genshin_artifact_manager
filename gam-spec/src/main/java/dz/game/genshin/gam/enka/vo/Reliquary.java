@@ -1,4 +1,4 @@
-package dz.game.genshin.gam.player.vo;
+package dz.game.genshin.gam.enka.vo;
 
 import lombok.Getter;
 import lombok.Setter;

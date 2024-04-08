@@ -1,4 +1,4 @@
-package dz.game.genshin.gam.player.vo;
+package dz.game.genshin.gam.enka.vo;
 
 public enum ItemType {
     ITEM_WEAPON,    // 무기
