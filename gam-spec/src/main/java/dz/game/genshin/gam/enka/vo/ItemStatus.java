@@ -1,5 +1,6 @@
 package dz.game.genshin.gam.enka.vo;
 
+import dz.game.genshin.gam.meta.vo.AppendProp;
 import lombok.Getter;
 import lombok.Setter;
 

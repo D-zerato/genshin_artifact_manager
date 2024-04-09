@@ -1,7 +1,7 @@
 package dz.game.genshin.gam.enka.entity;
 
 import dz.game.genshin.gam.enka.vo.Flat;
-import dz.game.genshin.gam.enka.vo.ReliquaryType;
+import dz.game.genshin.gam.meta.vo.ReliquaryType;
 import dz.game.genshin.gam.enka.vo.ItemStatus;
 import lombok.Getter;
 import lombok.Setter;
