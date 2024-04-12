@@ -3,12 +3,12 @@ package dz.game.genshin.gam.spec.artifact.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import dz.game.genshin.gam.spec.artifact.vo.ArtifactStat;
 import dz.game.genshin.gam.spec.vo.ReliquaryType;
+import dz.util.domain.JsonSerializable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Artifact implements Serializable {
+public class Artifact implements JsonSerializable {
     //
     private int artifactCode;
     private ReliquaryType type;

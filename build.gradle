@@ -78,3 +78,10 @@ project(':gam-aggregate') {
         implementation project(':util')
     }
 }
+
+
+project(':gam-spec') {
+    dependencies {
+        implementation project(':util')
+    }
+}

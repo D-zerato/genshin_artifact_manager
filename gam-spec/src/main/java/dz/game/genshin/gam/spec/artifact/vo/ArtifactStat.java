@@ -2,17 +2,17 @@ package dz.game.genshin.gam.spec.artifact.vo;
 
 import dz.game.genshin.gam.spec.vo.AppendProp;
 import dz.game.genshin.gam.spec.vo.StatCategory;
+import dz.util.domain.JsonSerializable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Getter
 @Setter
 @AllArgsConstructor
-public class ArtifactStat implements Serializable {
+public class ArtifactStat implements JsonSerializable {
     //
     private StatCategory statCategory;
     private AppendProp statType;
