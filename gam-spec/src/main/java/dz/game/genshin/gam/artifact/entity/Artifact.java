@@ -25,7 +25,7 @@ public class Artifact implements Serializable {
     private int rarity;
     private ArtifactStat mainStat;
     private List<ArtifactStat> subStats;
-    private List<Integer> enforcePattern;
+    private List<Integer> reinforcementPattern;
 
     public Artifact(
             int artifactCode
@@ -39,7 +39,7 @@ public class Artifact implements Serializable {
         this.rarity = rarity;
         this.mainStat = mainStat;
         this.subStats = subStats;
-        this.enforcePattern = new ArrayList<>();
+        this.reinforcementPattern = new ArrayList<>();
     }
 
     public String generateId() {

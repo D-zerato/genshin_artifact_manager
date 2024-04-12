@@ -1,6 +1,6 @@
 package dz.game.genshin.gam.meta.vo;
 
-public enum StatCategoryType {
+public enum StatCategory {
     MAIN,
     SUB
 }
