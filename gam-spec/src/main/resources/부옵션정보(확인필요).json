@@ -1,5 +1,12 @@
 [
   {
+    "id": 999001,
+    "depotId": 999,
+    "groupId": 22,
+    "propType": "FIGHT_PROP_CRITICAL_HURT",
+    "propValue": 3.5
+  },
+  {
   "id": 999002,
   "depotId": 999,
   "groupId": 20,

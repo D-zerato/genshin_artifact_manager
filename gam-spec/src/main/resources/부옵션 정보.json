@@ -1189,12 +1189,5 @@
     "groupId": 22,
     "propType": "FIGHT_PROP_CRITICAL_HURT",
     "propValue": 0.07769999653100967
-  },
-  {
-    "id": 999001,
-    "depotId": 999,
-    "groupId": 22,
-    "propType": "FIGHT_PROP_CRITICAL_HURT",
-    "propValue": 3.5
   }
 ]
