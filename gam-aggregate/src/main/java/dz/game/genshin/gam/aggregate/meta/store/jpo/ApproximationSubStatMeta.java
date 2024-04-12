@@ -7,6 +7,7 @@ import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
@@ -14,6 +15,7 @@ import java.util.List;
 
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
 @Table(schema = "APPROXIMATION_SUB_STAT_META")
 public class ApproximationSubStatMeta implements JsonSerializable {
     //
@@ -25,16 +27,4 @@ public class ApproximationSubStatMeta implements JsonSerializable {
     private BigDecimal originalValue;
     @Convert(converter = ListStringConverter.class)
     private List<Integer> reinforcementPattern;
-
-    public ApproximationSubStatMeta(
-            AppendProp statType
-            , BigDecimal approximationValue
-            , BigDecimal originalValue
-            , List<Integer> reinforcementPattern
-    ) {
-        this.statType = statType;
-        this.approximationValue = approximationValue;
-        this.originalValue = originalValue;
-        this.reinforcementPattern = reinforcementPattern;
-    }
 }
