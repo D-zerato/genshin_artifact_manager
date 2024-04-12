@@ -1,6 +1,6 @@
 plugins {
-    id 'org.springframework.boot' version '2.1.5.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.7.RELEASE'
+    id 'org.springframework.boot' version '3.0.4'
+    id 'io.spring.dependency-management' version '1.1.0'
 }
 
 ext {
@@ -17,6 +17,10 @@ repositories {
     mavenCentral()
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor(0, "seconds")
+}
+
 subprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
@@ -26,16 +30,23 @@ subprojects {
     group groupName
     version gamVersion
 
-    sourceCompatibility = '1.8' // source 단계에서의 사용 jdk 버전
-    targetCompatibility = '1.8' // 해당 프로그램을 돌리기 위한 최소 jdk 버전
+    sourceCompatibility = '17' // source 단계에서의 사용 jdk 버전
+    targetCompatibility = '17' // 해당 프로그램을 돌리기 위한 최소 jdk 버전
     compileJava.options.encoding = 'UTF-8'
 
     repositories {
         mavenCentral()
+        mavenLocal()
     }
 
     // 하위 모듈에서 공통으로 사용하는 세팅 추가
     dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+
+        implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
+
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
 
         implementation('org.apache.commons:commons-lang3:3.14.0')
         implementation('org.apache.commons:commons-collections4:4.1')
@@ -43,16 +54,27 @@ subprojects {
         implementation("org.apache.logging.log4j:log4j-api:2.17.1")
         implementation("org.apache.logging.log4j:log4j-core:2.17.1")
 
-        compileOnly 'org.projectlombok:lombok'
-        annotationProcessor 'org.projectlombok:lombok'
-
-        annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
-
-        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+            exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+        }
     }
+}
 
-    test {
-        useJUnitPlatform()
+project(':gam-boot') {
+    dependencies {
+        implementation project(':gam-rest')
+    }
+}
+
+project(':gam-rest') {
+    dependencies {
+        implementation project(':gam-aggregate')
+    }
+}
+
+project(':gam-aggregate') {
+    dependencies {
+        implementation project(':gam-spec')
+        implementation project(':util')
     }
 }
