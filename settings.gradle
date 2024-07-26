@@ -1,7 +1,7 @@
-rootProject.name = 'genshin-artifact-manager'
-include 'gam-aggregate'
-include 'gam-spec'
-include 'gam-rest'
-include 'gam-boot'
-include 'util'
-
+pluginManagement {
+    repositories {
+        maven { url 'https://repo.spring.io/snapshot' }
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'artifact-manager'
