@@ -1,12 +1,10 @@
-import org.gradle.api.tasks.compile.JavaCompile
-
 plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.5'
     id 'io.spring.dependency-management' version '1.1.4'
 }
 
-group = 'dz.game.genshin'
+group = 'dz.game'
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -28,6 +26,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
+    implementation 'org.mariadb.jdbc:mariadb-java-client'
     implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
     annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
     annotationProcessor "jakarta.annotation:jakarta.annotation-api"
@@ -41,7 +40,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-def generated = 'src/main/build/generated/querydsl'
+def generated = layout.buildDirectory.dir("generated/querydsl").get().asFile
 
 // querydsl QClass 파일 생성 위치를 지정
 tasks.withType(JavaCompile).configureEach {
